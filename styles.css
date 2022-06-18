@@ -1,0 +1,68 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navigation-bar{
+  padding: 0 7% 0;
+  opacity: 1;
+}
+
+.my-video {
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+
+.title{
+  padding: 3% 15%;
+  opacity: 1;
+}
+
+/*Navigation Bar*/
+
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.download-button{
+  margin-top: 3%
+}
+
+.header-container{
+  color: white;
+}
+
+.big-heading{
+  margin-top: 17.5%;
+  margin-bottom: 5%;
+  font-size: 3rem;
+}
+
+.sub-text{
+  font-family: 'Merriweather', serif;
+  letter-spacing: 1px;
+}
+
+
+/* Footer */
+
+.copyright{
+  text-align: center;
+}
