@@ -9,7 +9,7 @@ body{
 
 .my-video {
   z-index: -1;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -17,8 +17,10 @@ body{
 
 
 .title{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
   opacity: 1;
+  width: 100%;
+  overflow: hidden;
 }
 
 /*Navigation Bar*/
@@ -60,9 +62,69 @@ body{
   letter-spacing: 1px;
 }
 
+/* features  */
+
+.features{
+  margin: 5% 5%;
+  text-align: center;
+}
+
+@media (min-width: 1600px) {
+  .features{
+    margin-top: 10%;
+}}
+
+.feature-image{
+  width: 20%;
+  margin-bottom: 5%;
+}
+
+/* Services */
+
+.services{
+  padding: 2.5% 5%;
+  background-color: #1c2b68;
+  color: white;
+}
+
+.services-row{
+  margin: 2.5% 0;
+}
+
+.si-container{
+  text-align: center;
+}
+
+.services-image{
+  height: 75%;
+}
+
+/* Testimonials */
+.testimonials{
+  margin: 5% 5%;
+  text-align: center;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
 
 /* Footer */
 
-.copyright{
+.footer{
+  background-color: grey;
+  color: white;
+  padding: 3%;
   text-align: center;
+}
+
+.linkedin-icon{
+  font-size: 3rem;
+}
+
+.copyright{
+  margin-top: 2%;
+  margin-bottom: 0;
 }
