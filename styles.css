@@ -7,6 +7,11 @@ body{
   opacity: 1;
 }
 
+.company_logo{
+  width: 60px;
+  margin-right: 2%;
+}
+
 .my-video {
   z-index: -1;
   position: absolute;
@@ -33,6 +38,7 @@ body{
 
 .nav-item {
     padding: 0 18px;
+
 }
 
 .nav-link {
@@ -44,8 +50,10 @@ body{
 }
 
 .download-button{
-  margin-top: 3%
+  margin-top: 3%;
 }
+
+
 
 .header-container{
   color: white;
@@ -65,13 +73,13 @@ body{
 /* features  */
 
 .features{
-  margin: 5% 5%;
+  margin: 5% 5% 3%;
   text-align: center;
 }
 
 @media (min-width: 1600px) {
   .features{
-    margin-top: 10%;
+    margin-top: 12%;
 }}
 
 .feature-image{
@@ -79,16 +87,17 @@ body{
   margin-bottom: 5%;
 }
 
+.feature_heading{
+  margin-bottom: 4%;
+  font-size: 2rem;
+}
+
 /* Services */
 
 .services{
-  padding: 2.5% 5%;
+  padding: 5% 5% 0;
   background-color: #1c2b68;
   color: white;
-}
-
-.services-row{
-  margin: 2.5% 0;
 }
 
 .si-container{
@@ -110,6 +119,38 @@ body{
     border-radius: 100%;
     margin: 20px;
 }
+
+
+/* Contact Us */
+
+.contact_headings{
+  margin-top: 5%;
+  margin-bottom: 1%
+}
+
+.whatsapp-button{
+  background-color: green;
+}
+
+.contact_us{
+  padding: 5% 5%;
+  background-color: #1c2b68;
+  color: white;
+}
+
+.form-group{
+  margin: 3% 0;
+}
+
+.email_link{
+  color: white;
+}
+
+.submit-button{
+  margin-top: 3%;
+  background-color: green;
+}
+
 
 /* Footer */
 
