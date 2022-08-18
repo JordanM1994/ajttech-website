@@ -181,3 +181,8 @@ body{
   text-align: center;
   padding: 3% 5%;
 }
+
+@media (min-width: 1600px) {
+  .reports{
+    padding: 12% 5% 3%;
+}}
