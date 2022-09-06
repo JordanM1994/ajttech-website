@@ -3,6 +3,7 @@ body{
   font-size: 1.15rem;
 }
 
+
 .navigation-bar{
   padding: 0 7% 0;
   opacity: 1;
@@ -192,9 +193,14 @@ body{
 .reports{
   text-align: center;
   padding: 3% 5%;
+  background-color: #FFF;
+}
+
+.report_headings{
+  margin: 2% 0;
 }
 
 @media (min-width: 1600px) {
   .reports{
-    padding: 12% 5% 3%;
+    padding: 1% 5% 3%;
 }}
