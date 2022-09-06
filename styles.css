@@ -1,5 +1,6 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
 }
 
 .navigation-bar{
@@ -92,6 +93,11 @@ body{
   font-size: 2rem;
 }
 
+.feat_subtitle{
+  margin-top: 5%;
+  font-weight: bold;
+}
+
 /* Services */
 
 .services{
@@ -118,12 +124,18 @@ body{
   text-align: center;
 }
 
-.testimonial-image{
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
+.quote_heading{
+  margin-bottom: 2%;
 }
 
+.quote_person{
+  margin-top: 2%;
+}
+
+.company_logos{
+  width: 15%;
+  text-align: center;
+}
 
 /* Contact Us */
 
