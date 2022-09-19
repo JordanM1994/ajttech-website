@@ -3,7 +3,6 @@ body{
   font-size: 1.15rem;
 }
 
-
 .navigation-bar{
   padding: 0 7% 0;
   opacity: 1;
@@ -25,10 +24,39 @@ body{
 
 .title{
   padding: 3% 15% 7%;
-  opacity: 1;
   width: 100%;
   overflow: hidden;
+  animation: fadeIn 2.5s;
+  -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
 }
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+/* @-ms-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+} */
 
 /*Navigation Bar*/
 
