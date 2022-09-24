@@ -178,7 +178,7 @@ body{
 }
 
 .contact_us{
-  padding: 5% 5%;
+  padding: 5% 5% 2%;
   background-color: #1c2b68;
   color: white;
 }
@@ -196,13 +196,18 @@ body{
   background-color: green;
 }
 
+.btn-secondary{
+  background-color: #ff9500;
+  color: black;
+}
+
 
 /* Footer */
 
 .footer{
-  background-color: grey;
+  background-color: #1c2b68;
   color: white;
-  padding: 3%;
+  padding: 1%;
   text-align: center;
 }
 
