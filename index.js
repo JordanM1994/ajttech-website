@@ -1,5 +1,11 @@
-// $(".feature-image").hover(function(){
-//     $(this).css("width", "30%");
-//     }, function(){
-//     $(this).css("width", "20%");
-//   });
+$(document).ready(function(){
+        var scroll_pos = 0;
+        $(document).scroll(function() {
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 100) {
+                $(".navigation-bar").addClass("navbar-scroll")
+            } else {
+              $(".navigation-bar").removeClass("navbar-scroll")
+            }
+        });
+    });

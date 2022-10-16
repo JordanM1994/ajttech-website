@@ -4,6 +4,21 @@ body{
 }
 
 .navigation-bar{
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0 7% 0;
+  opacity: 1;
+}
+
+.navbar-scroll{
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #1c2b68;
+  border-bottom:  1px solid black;
   padding: 0 7% 0;
   opacity: 1;
 }
