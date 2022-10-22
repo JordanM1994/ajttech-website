@@ -118,12 +118,22 @@ body{
 /* features  */
 
 .features{
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
   margin: 5% 5% 3%;
   text-align: center;
 }
 
 @media (min-width: 1600px) {
   .features{
+     opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     margin-top: 12%;
 }}
 
@@ -252,3 +262,7 @@ body{
   .reports{
     padding: 1% 5% 3%;
 }}
+
+.show{
+  opacity: 1;
+}
