@@ -252,3 +252,10 @@ body{
   .reports{
     padding: 1% 5% 3%;
 }}
+
+
+/* about us page */
+.aboutus{
+  padding: 3% 5%;
+  background-color: white;
+}
