@@ -1,6 +1,5 @@
 body{
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.15rem;
 }
 
 .navigation-bar{
@@ -252,3 +251,35 @@ body{
   .reports{
     padding: 1% 5% 3%;
 }}
+
+
+/* about us page */
+.aboutus{
+  padding: 3% 5%;
+  background-color: white;
+}
+
+.aboutus-heading{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.who-copy{
+  position: relative;
+  top: 50%;
+  transform: translateY(35%);
+}
+
+.about-us-bottom{
+  padding-top: 4%
+}
+
+.column-widths{
+  padding: 0 3%;
+}
+
+.aboutus-ext{
+  background-color: #1c2b68;
+  color: white;
+}
