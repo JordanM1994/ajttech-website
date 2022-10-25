@@ -1,3 +1,9 @@
+@keyframes easing-in {
+  0%   {left:-100px;}
+  50%  {left:-50;}
+  100% {left:0;}
+}
+
 body{
   font-family: 'Montserrat', sans-serif;
 }
@@ -37,34 +43,35 @@ body{
 
 
 .title{
+  position: relative;
   padding: 3% 15% 7%;
   width: 100%;
   overflow: hidden;
-  animation: fadeIn 2.5s;
-  -webkit-animation: fadeIn 2.5s;
-  -moz-animation: fadeIn 2.5s;
-  -o-animation: fadeIn 2.5s;
-  -ms-animation: fadeIn 2.5s;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
+0% { opacity: 0; left: -100px; }
+100% { opacity: 1; left: 0; }
 }
 
 @-moz-keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
+  0% { opacity: 0; left: -100px; }
+  100% { opacity: 1; left: 0; }
 }
 
 @-webkit-keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
+  0% { opacity: 0; left: -100px; }
+  100% { opacity: 1; left: 0; }
 }
 
 @-o-keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
+  0% { opacity: 0; left: -100px; }
+  100% { opacity: 1; left: 0; }
 }
 
 /* @-ms-keyframes fadeIn {
@@ -118,21 +125,15 @@ body{
 
 .features{
   opacity: 0;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  position: relative;
   margin: 5% 5% 3%;
   text-align: center;
 }
 
 @media (min-width: 1600px) {
   .features{
-     opacity: 0;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    opacity: 0;
+    position: relative;
     margin-top: 12%;
 }}
 
@@ -270,15 +271,28 @@ body{
 }
 
 .aboutus-heading{
+  position: relative;
   text-align: center;
   margin-top: 2%;
   margin-bottom: 4%;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
 }
 
 .who-copy{
+  opacity: 0;
+  animation-delay: 2s;
   position: relative;
   top: 50%;
   transform: translateY(35%);
+}
+
+.who-img{
+  opacity: 0;
+  position: relative;
 }
 
 .about-us-bottom{
@@ -293,7 +307,12 @@ body{
   background-color: #1c2b68;
   color: white;
   }
-  
+
 .show{
   opacity: 1;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
 }

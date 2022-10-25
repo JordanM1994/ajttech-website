@@ -13,7 +13,10 @@ $(document).scroll(function() {
   scroll_pos_2 = $(this).scrollTop();
   if (scroll_pos_2 > 200) {
     $(".features").addClass("show")
-  } else {
-    $(".features").removeClass("show")
-  }
+  } 
 });
+
+setTimeout( function() {
+  $(".who-copy").addClass("show")
+  $(".who-img").addClass("show")
+},500)
