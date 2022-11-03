@@ -1,3 +1,11 @@
+const screenWidth = $( ".features" ).width();
+console.log(screenWidth);
+if (screenWidth < 880) {
+  $(".row").removeClass("service-row");
+  $('.svc-text').each(function () {
+          $(this).insertBefore($(this).prev('.svc-img'));
+  });};
+
 $(document).scroll(function() {
   var scroll_pos = 0;
   scroll_pos = $(this).scrollTop();
@@ -12,8 +20,24 @@ $(document).scroll(function() {
   var scroll_pos_2 = 0;
   scroll_pos_2 = $(this).scrollTop();
   if (scroll_pos_2 > 200) {
-    $(".features").addClass("show")
-  } 
+    $(".feature_heading").addClass("show")
+
+    setTimeout( function() {
+      $(".power_bi").addClass("show")
+    },1000)
+
+    setTimeout( function() {
+      $(".power_automate").addClass("show")
+    },1500)
+
+    setTimeout( function() {
+      $(".power_apps").addClass("show")
+    },2000)
+
+    setTimeout( function() {
+      $(".feat_subtitle").addClass("show")
+    },2500)
+    }
 });
 
 setTimeout( function() {
