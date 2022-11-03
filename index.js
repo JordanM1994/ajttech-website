@@ -1,3 +1,11 @@
+const screenWidth = $( ".features" ).width();
+console.log(screenWidth);
+if (screenWidth < 880) {
+  $(".row").removeClass("service-row");
+  $('.svc-text').each(function () {
+          $(this).insertBefore($(this).prev('.svc-img'));
+  });};
+
 $(document).scroll(function() {
   var scroll_pos = 0;
   scroll_pos = $(this).scrollTop();
