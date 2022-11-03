@@ -4,8 +4,29 @@
   100% {left:0;}
 }
 
+@keyframes fadeIn {
+0% { opacity: 0; left: -100px; }
+100% { opacity: 1; left: 0; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; left: -100px; }
+  100% { opacity: 1; left: 0; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; left: -100px; }
+  100% { opacity: 1; left: 0; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; left: -100px; }
+  100% { opacity: 1; left: 0; }
+}
+
 body{
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 .navigation-bar{
@@ -38,7 +59,6 @@ body{
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
 }
 
 
@@ -53,31 +73,6 @@ body{
   -o-animation: fadeIn 2s;
   -ms-animation: fadeIn 2s;
 }
-
-@keyframes fadeIn {
-0% { opacity: 0; left: -100px; }
-100% { opacity: 1; left: 0; }
-}
-
-@-moz-keyframes fadeIn {
-  0% { opacity: 0; left: -100px; }
-  100% { opacity: 1; left: 0; }
-}
-
-@-webkit-keyframes fadeIn {
-  0% { opacity: 0; left: -100px; }
-  100% { opacity: 1; left: 0; }
-}
-
-@-o-keyframes fadeIn {
-  0% { opacity: 0; left: -100px; }
-  100% { opacity: 1; left: 0; }
-}
-
-/* @-ms-keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
-} */
 
 /*Navigation Bar*/
 
@@ -126,16 +121,13 @@ body{
 .features{
   opacity: 0;
   position: relative;
-  margin: 5% 5% 3%;
+  margin-top: 5%;
+  padding: 3% 5% 3%;
   text-align: center;
+  background-color: white;
 }
 
-@media (min-width: 1600px) {
-  .features{
-    opacity: 0;
-    position: relative;
-    margin-top: 12%;
-}}
+
 
 .feature-image{
   width: 20%;
@@ -258,11 +250,6 @@ body{
   margin: 2% 0;
 }
 
-@media (min-width: 1600px) {
-  .reports{
-    padding: 1% 5% 3%;
-}}
-
 
 /* about us page */
 .aboutus{
@@ -296,11 +283,7 @@ body{
 }
 
 .about-us-bottom{
-  padding-top: 4%
-}
-
-.column-widths{
-  padding: 0 3%;
+  padding: 3% 5% 0;
 }
 
 .aboutus-ext{
@@ -308,6 +291,65 @@ body{
   color: white;
   }
 
+
+
+/* Mobile view */
+
+@media (max-width: 450px) {
+
+  body{
+    font-size: 1.2rem;
+  }
+
+}
+
+/* tablet Screen size */
+
+@media (max-width: 600px ) {
+
+  .my-video{
+    height: 100%;
+  }
+
+  .navbar-brand{
+    font-size: 1.5rem;
+  }
+
+  .big-heading{
+    font-size: 2rem;
+  }
+
+  .who-copy{
+    text-align: center;
+  }
+
+  .about-us-bottom{
+    text-align: center;
+  }
+
+}
+
+/* Desktop Screen size */
+
+
+
+
+/* XL Screen size */
+
+@media (min-width: 1600px) {
+  .features{
+    opacity: 0;
+    position: relative;
+    margin-top: 9%;
+  }
+
+  .reports{
+    padding: 1% 5% 3%;
+  }
+}
+
+
+/* Animation */
 .show{
   opacity: 1;
   animation: fadeIn 1s;
