@@ -119,15 +119,26 @@ body{
 /* features  */
 
 .features{
-  opacity: 0;
-  position: relative;
   margin-top: 5%;
   padding: 3% 5% 3%;
   text-align: center;
   background-color: white;
 }
 
+.power_bi{
+  opacity: 0;
+  position: relative;
+}
 
+.power_automate{
+  opacity: 0;
+  position: relative;
+}
+
+.power_apps{
+  opacity: 0;
+  position: relative;
+}
 
 .feature-image{
   width: 20%;
@@ -135,6 +146,8 @@ body{
 }
 
 .feature_heading{
+  opacity: 0;
+  position: relative;
   margin-bottom: 4%;
   font-size: 2rem;
 }
@@ -142,6 +155,8 @@ body{
 .feat_subtitle{
   margin-top: 4%;
   font-weight: bold;
+  opacity: 0;
+  position: relative;
 }
 
 /* Services */
@@ -338,8 +353,6 @@ body{
 
 @media (min-width: 1600px) {
   .features{
-    opacity: 0;
-    position: relative;
     margin-top: 9%;
   }
 
