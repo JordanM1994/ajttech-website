@@ -66,7 +66,6 @@ body{
 
 .title{
   position: relative;
-  padding: 3% 15% 7%;
   width: 100%;
   overflow: hidden;
   animation: fadeIn 2s;
@@ -80,7 +79,6 @@ body{
 
 
 .navbar-brand {
-    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -108,9 +106,7 @@ body{
 }
 
 .big-heading{
-  margin-top: 17.5%;
   margin-bottom: 5%;
-  font-size: 3rem;
 }
 
 .sub-text{
@@ -151,7 +147,6 @@ body{
   opacity: 0;
   position: relative;
   margin-bottom: 4%;
-  font-size: 2rem;
 }
 
 .feat_subtitle{
@@ -196,7 +191,6 @@ body{
 }
 
 .company_logos{
-  width: 15%;
   text-align: center;
 }
 
@@ -312,28 +306,66 @@ body{
 
 /* Mobile view */
 
-@media (max-width: 450px) {
+@media (min-width: 768px) {
 
-  body{
-    font-size: 1.5rem;
+  .navbar-brand{
+    font-size: 2.5rem;
   }
 
+  .title{
+    padding: 10% 5% 17%;
+  }
+
+  .body-text{
+    font-size: 2em;
+  }
+
+  .big-heading{
+    font-size: 4em;
+    margin-top: 5%;
+  }
+
+  .feature_heading{
+    font-size: 3rem;
+  }
+
+  .h2-headings{
+    font-size: 3rem;
+  }
+
+  .h3-headings{
+    font-size: 3rem;
+    margin-bottom: 5%;
+  }
+
+  .contact_headings{
+    font-size: 2rem;
+  }
+
+  .download-button{
+    margin-bottom: 5%;
+  }
+
+  .company_logos{
+    width: 40%;
+  }
 }
 
 /* tablet Screen size */
 
-@media (max-width: 600px ) {
+@media (min-width: 1024px ) {
 
   .my-video{
     height: 100%;
   }
 
-  .navbar-brand{
-    font-size: 1.5rem;
-  }
-
   .big-heading{
     font-size: 2rem;
+    margin-top: 17.5%;
+  }
+
+  .title{
+    padding: 3% 15% 7%;
   }
 
   .who-copy{
@@ -344,12 +376,48 @@ body{
     text-align: center;
   }
 
+  .body-text{
+    font-size: 1rem;
+  }
+
+  .feature_heading{
+    font-size: 2rem;
+  }
+
+  .h2-headings{
+    font-size: 2rem;
+  }
+
+  .h3-headings{
+    font-size: 2rem;
+    margin-bottom: inherit;
+  }
+
+  .download-button{
+    margin-bottom: inherit;
+  }
+
+  .contact_headings{
+    font-size: inherit;
+  }
+
+  .company_logos{
+    width: 15%;
+  }
 }
 
-/* Desktop Screen size */
+/* L Screen size */
 
+@media (min-width: 1300px) {
 
+  .big-heading{
+    font-size: 3rem;
+  }
 
+  .my-video{
+    height: inherit;
+  }
+}
 
 /* XL Screen size */
 

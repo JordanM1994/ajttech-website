@@ -1,6 +1,6 @@
 const screenWidth = $( ".features" ).width();
 console.log(screenWidth);
-if (screenWidth < 880) {
+if (screenWidth < 900) {
   $(".row").removeClass("service-row");
   $('.svc-text').each(function () {
           $(this).insertBefore($(this).prev('.svc-img'));
