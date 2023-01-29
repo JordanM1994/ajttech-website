@@ -84,7 +84,6 @@ body{
 
 .nav-item {
     padding: 0 18px;
-
 }
 
 .nav-link {
@@ -266,6 +265,7 @@ body{
 .aboutus{
   padding: 3% 5%;
   background-color: white;
+  text-align: center;
 }
 
 .aboutus-heading{
@@ -285,7 +285,6 @@ body{
   animation-delay: 2s;
   position: relative;
   top: 50%;
-  transform: translateY(35%);
 }
 
 .who-img{
@@ -309,11 +308,15 @@ body{
 @media (min-width: 768px) {
 
   .navbar-brand{
-    font-size: 2.5rem;
+    font-size: 4rem;
+  }
+
+  .navbar-toggler{
+    font-size: 3rem;
   }
 
   .title{
-    padding: 10% 5% 17%;
+    padding: 10% 5% 10%;
   }
 
   .body-text{
@@ -323,6 +326,10 @@ body{
   .big-heading{
     font-size: 4em;
     margin-top: 5%;
+  }
+
+  .aboutus-heading{
+    font-size: 4em;
   }
 
   .feature_heading{
@@ -344,11 +351,21 @@ body{
 
   .download-button{
     margin-bottom: 5%;
+    font-size: 2rem;
   }
 
   .company_logos{
     width: 40%;
   }
+
+  .who-copy{
+    transform: inherit;
+  }
+
+  .nav-link {
+    font-size: 3rem;
+  }
+
 }
 
 /* tablet Screen size */
@@ -357,6 +374,10 @@ body{
 
   .my-video{
     height: 100%;
+  }
+
+  .navbar-brand{
+    font-size: 2.5rem;
   }
 
   .big-heading{
@@ -368,12 +389,12 @@ body{
     padding: 3% 15% 7%;
   }
 
-  .who-copy{
+  .about-us-bottom{
     text-align: center;
   }
 
-  .about-us-bottom{
-    text-align: center;
+  .aboutus-heading{
+    font-size: 2em;
   }
 
   .body-text{
@@ -395,6 +416,7 @@ body{
 
   .download-button{
     margin-bottom: inherit;
+    font-size: inherit;
   }
 
   .contact_headings{
@@ -403,6 +425,14 @@ body{
 
   .company_logos{
     width: 15%;
+  }
+
+  .who-copy{
+    transform: translateY(35%);
+  }
+
+  .nav-link {
+    font-size: inherit;
   }
 }
 
