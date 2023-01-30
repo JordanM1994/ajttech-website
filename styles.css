@@ -86,10 +86,6 @@ body{
     padding: 0 18px;
 }
 
-.nav-link {
-    font-size: 1.2rem;
-}
-
 .container-fluid{
   padding: 0;
 }
@@ -307,6 +303,10 @@ body{
 
 @media (min-width: 768px) {
 
+  .row {
+    margin-right: 0;
+  }
+
   .navbar-brand{
     font-size: 4rem;
   }
@@ -366,6 +366,10 @@ body{
     font-size: 3rem;
   }
 
+  .aboutus-ext{
+    text-align: center;
+  }
+
 }
 
 /* tablet Screen size */
@@ -374,6 +378,10 @@ body{
 
   .my-video{
     height: 100%;
+  }
+
+  .row {
+    margin-right: inherit;
   }
 
   .navbar-brand{
@@ -432,7 +440,11 @@ body{
   }
 
   .nav-link {
-    font-size: inherit;
+    font-size: 1.2rem;
+  }
+
+  .aboutus-ext{
+    text-align: inherit;
   }
 
 }
