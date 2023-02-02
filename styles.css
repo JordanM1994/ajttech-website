@@ -95,7 +95,6 @@ body{
 }
 
 
-
 .header-container{
   color: white;
 }
@@ -303,6 +302,13 @@ body{
 
 @media (min-width: 768px) {
 
+  #features_anchor{
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+  }
+
   .row {
     margin-right: 0;
   }
@@ -316,42 +322,41 @@ body{
   }
 
   .title{
-    padding: 10% 5% 10%;
+    padding: 5%;
   }
 
   .body-text{
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .big-heading{
     font-size: 4em;
-    margin-top: 5%;
   }
 
   .aboutus-heading{
-    font-size: 4em;
+    font-size: 4.5em;
   }
 
   .feature_heading{
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .h2-headings{
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .h3-headings{
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 5%;
   }
 
   .contact_headings{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .download-button{
     margin-bottom: 5%;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .company_logos{
@@ -363,7 +368,7 @@ body{
   }
 
   .nav-link {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .aboutus-ext{
@@ -378,6 +383,10 @@ body{
 
   .my-video{
     height: 100%;
+  }
+
+  #features_anchor{
+    top: -25px;
   }
 
   .row {
@@ -406,7 +415,7 @@ body{
   }
 
   .body-text{
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .feature_heading{
