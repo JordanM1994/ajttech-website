@@ -309,6 +309,13 @@ body{
     visibility: hidden;
   }
 
+  #contact_us_anchor{
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+  }
+
   .row {
     margin-right: 0;
   }
@@ -386,6 +393,10 @@ body{
   }
 
   #features_anchor{
+    top: -25px;
+  }
+
+  #contact_us_anchor{
     top: -25px;
   }
 
