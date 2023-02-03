@@ -29,6 +29,10 @@ body{
   overflow-x: hidden;
 }
 
+.hidden{
+  display: none;
+}
+
 .navigation-bar{
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -255,6 +259,12 @@ body{
   margin: 2% 0;
 }
 
+.view-report-button{
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 2.5rem;
+}
+
 
 /* about us page */
 .aboutus{
@@ -349,7 +359,7 @@ body{
   }
 
   .h2-headings{
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .h3-headings{
@@ -380,6 +390,16 @@ body{
 
   .aboutus-ext{
     text-align: center;
+  }
+
+  .report-text{
+    margin-top: 6%;
+    margin-bottom: 6%
+  }
+
+  .h1-headings{
+    font-size: 4rem;
+    margin-bottom: 6%;
   }
 
 }
@@ -437,6 +457,11 @@ body{
     font-size: 2rem;
   }
 
+  .h1-headings{
+    font-size: 2rem;
+    margin-bottom: inherit;
+  }
+
   .h3-headings{
     font-size: 2rem;
     margin-bottom: inherit;
@@ -465,6 +490,11 @@ body{
 
   .aboutus-ext{
     text-align: inherit;
+  }
+
+  .report-text{
+    margin-top: inherit%;
+    margin-bottom: inherit;%
   }
 
 }
