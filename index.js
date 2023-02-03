@@ -1,10 +1,22 @@
-const screenWidth = $( ".features" ).width();
+let screenWidth
+
+if ($( ".features" ).length) {
+  screenWidth = $( ".features" ).width();
+} else {
+  screenWidth = $( ".report_headings" ).width();
+}
+
 console.log(screenWidth);
 if (screenWidth < 900) {
   $(".row").removeClass("service-row");
   $('.svc-text').each(function () {
           $(this).insertBefore($(this).prev('.svc-img'));
   });};
+
+  if (screenWidth < 900) {
+    $("iframe").hide();
+    $(".view-report-button").show();
+    };
 
 $(document).scroll(function() {
   var scroll_pos = 0;
