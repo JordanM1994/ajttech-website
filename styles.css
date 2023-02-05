@@ -196,7 +196,7 @@ body{
 
 .contact_headings{
   margin-top: 5%;
-  margin-bottom: 1%
+  margin-bottom: 1%;
 }
 
 .whatsapp-button{
@@ -376,6 +376,12 @@ body{
     font-size: 2.5rem;
   }
 
+  .contact-button{
+    margin: 2% 0;
+    font-size: 2.5rem;
+  }
+
+
   .company_logos{
     width: 40%;
   }
@@ -472,8 +478,13 @@ body{
     font-size: inherit;
   }
 
-  .contact_headings{
+  .contact-button{
+    margin: inherit;
     font-size: inherit;
+  }
+
+  .contact_headings{
+    font-size: 1.5rem;
   }
 
   .company_logos{
