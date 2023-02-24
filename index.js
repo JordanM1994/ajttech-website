@@ -29,23 +29,27 @@ $(document).scroll(function() {
 });
 
 if($(window).width() <= 1024) {
-  $(".feature_heading").addClass("show")
 
   setTimeout( function() {
-    $(".power_bi").addClass("show")
+    $(".feature_heading").addClass("show")
   },1000)
 
   setTimeout( function() {
-    $(".power_automate").addClass("show")
+    $(".power_bi").addClass("show")
   },1500)
 
   setTimeout( function() {
-    $(".power_apps").addClass("show")
+    $(".power_automate").addClass("show")
   },2000)
 
   setTimeout( function() {
-    $(".feat_subtitle").addClass("show")
+    $(".power_apps").addClass("show")
   },2500)
+
+  setTimeout( function() {
+    $(".feat_subtitle").addClass("show")
+  },3000)
+  
 } else {
   $(document).scroll(function() {
     var scroll_pos_2 = 0;
