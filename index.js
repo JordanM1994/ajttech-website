@@ -28,29 +28,49 @@ $(document).scroll(function() {
   }
 });
 
-$(document).scroll(function() {
-  var scroll_pos_2 = 0;
-  scroll_pos_2 = $(this).scrollTop();
-  if (scroll_pos_2 > 200) {
-    $(".feature_heading").addClass("show")
+if($(window).width() <= 1024) {
+  $(".feature_heading").addClass("show")
 
-    setTimeout( function() {
-      $(".power_bi").addClass("show")
-    },1000)
+  setTimeout( function() {
+    $(".power_bi").addClass("show")
+  },1000)
 
-    setTimeout( function() {
-      $(".power_automate").addClass("show")
-    },1500)
+  setTimeout( function() {
+    $(".power_automate").addClass("show")
+  },1500)
 
-    setTimeout( function() {
-      $(".power_apps").addClass("show")
-    },2000)
+  setTimeout( function() {
+    $(".power_apps").addClass("show")
+  },2000)
 
-    setTimeout( function() {
-      $(".feat_subtitle").addClass("show")
-    },2500)
-    }
-});
+  setTimeout( function() {
+    $(".feat_subtitle").addClass("show")
+  },2500)
+} else {
+  $(document).scroll(function() {
+    var scroll_pos_2 = 0;
+    scroll_pos_2 = $(this).scrollTop();
+    if (scroll_pos_2 > 200) {
+      $(".feature_heading").addClass("show")
+
+      setTimeout( function() {
+        $(".power_bi").addClass("show")
+      },1000)
+
+      setTimeout( function() {
+        $(".power_automate").addClass("show")
+      },1500)
+
+      setTimeout( function() {
+        $(".power_apps").addClass("show")
+      },2000)
+
+      setTimeout( function() {
+        $(".feat_subtitle").addClass("show")
+      },2500)
+      }
+  });
+};
 
 setTimeout( function() {
   $(".who-copy").addClass("show")
