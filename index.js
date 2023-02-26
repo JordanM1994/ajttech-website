@@ -13,7 +13,7 @@ if (screenWidth < 900) {
           $(this).insertBefore($(this).prev('.svc-img'));
   });};
 
-  if (screenWidth < 900) {
+  if (screenWidth < 1300) {
     $("iframe").hide();
     $(".view-report-button").show();
     };
