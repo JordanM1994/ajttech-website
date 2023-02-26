@@ -38,7 +38,6 @@ body{
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding: 0 7% 0;
   opacity: 1;
 }
 
@@ -316,6 +315,10 @@ body{
 
 @media (min-width: 768px) {
 
+  .navigation-bar{
+    padding: 0 7% 0;
+  }
+
   #features_anchor{
     display: block;
     position: relative;
@@ -418,8 +421,12 @@ body{
 
 @media (min-width: 1024px ) {
 
-  .my-video{
-    height: 100%;
+  .navigation-bar{
+    padding: 0 1% 0;
+  }
+
+  .who-copy{
+    transform: translateY(5%);
   }
 
   #features_anchor{
@@ -495,10 +502,6 @@ body{
     width: 15%;
   }
 
-  .who-copy{
-    transform: translateY(35%);
-  }
-
   .nav-link {
     font-size: 1.2rem;
   }
@@ -512,11 +515,23 @@ body{
     margin-bottom: inherit;
   }
 
+  .contact-img-tablet{
+    height: 75%;
+  };
+
 }
 
 /* L Screen size */
 
 @media (min-width: 1300px) {
+
+  .navigation-bar{
+      padding: 0 7% 0;
+  }
+
+  .who-copy{
+    transform: translateY(25%);
+  }
 
   .big-heading{
     font-size: 3rem;
@@ -525,6 +540,10 @@ body{
   .my-video{
     height: inherit;
   }
+
+  .contact-img-tablet{
+    height: inherit;
+  };
 }
 
 /* XL Screen size */
@@ -549,3 +568,9 @@ body{
   -o-animation: fadeIn 1s;
   -ms-animation: fadeIn 1s;
 }
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
