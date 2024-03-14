@@ -27,6 +27,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+  background-color: #211a1d;
 }
 
 .hidden{
@@ -39,6 +40,7 @@ body{
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 1;
+  background-color: #8075ff;
 }
 
 .navbar-scroll{
@@ -46,26 +48,16 @@ body{
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #1c2b68;
+  backdrop-filter: blur(15px);
   border-bottom:  1px solid black;
   padding: 0 7% 0;
-  opacity: 1;
+  background-color: rgb(128 117 255 / 50%);
 }
 
 .company_logo{
-  height: 50px;
+  height: 40px;
   margin-right: 2%;
 }
-
-.my-video {
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
 
 .title{
   position: relative;
@@ -106,18 +98,61 @@ body{
   margin-bottom: 5%;
 }
 
-.sub-text{
-  font-family: 'Merriweather', serif;
+.title-text{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 1px;
+}
+
+/* What we do  */
+
+.what-we-do{
+  padding: 0 5% 3%;
+  background-color: #F8F0FB;
+  height: 500px;
+}
+
+.what-we-do-margin{
+  margin-top: 2%;
 }
 
 /* features  */
 
 .features{
-  margin-top: 5%;
   padding: 3% 5% 3%;
   text-align: center;
-  background-color: white;
+  background-color: #F8F0FB;
+}
+
+.feature-center{
+  text-align: center;
+}
+
+.feature-list{
+  text-align: left;
+}
+
+.feature-title{
+  padding-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  border: 1px;
+
+  height: 100%;
+  padding: 35px;
+  border: 2px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .power_bi{
@@ -137,7 +172,7 @@ body{
 
 .feature-image{
   width: 20%;
-  margin-bottom: 5%;
+  margin: 10px auto;
 }
 
 .feature_heading{
@@ -156,9 +191,13 @@ body{
 /* Services */
 
 .services{
-  padding: 5% 5% 0;
-  background-color: #1c2b68;
+  padding: 0% 5% 0;
   color: white;
+  height: 500px;
+}
+
+.height-restriction{
+  height: 500px;
 }
 
 .si-container{
@@ -166,17 +205,30 @@ body{
 }
 
 .services-image{
-  height: 75%;
+  margin: auto;
 }
 
 .service-row{
-  height: 400px;
+  height: 450px;
+}
+
+/* Walk Through */
+.walk-through{
+  padding: 5% 5% 0;
+}
+
+/* roadmap */
+.roadmap{
+  padding: 5% 5% 0;
+  color: white;
+  text-align: center;
 }
 
 /* Testimonials */
 .testimonials{
-  margin: 5% 5%;
+  padding: 5% 5%;
   text-align: center;
+  background-color: #F8F0FB;
 }
 
 .quote_heading{
@@ -204,7 +256,6 @@ body{
 
 .contact_us{
   padding: 5% 5% 2%;
-  background-color: #1c2b68;
   color: white;
 }
 
@@ -222,7 +273,7 @@ body{
 }
 
 .btn-secondary{
-  background-color: #ff9500;
+  background-color: #8075ff;
   color: black;
 }
 
@@ -234,7 +285,6 @@ body{
 /* Footer */
 
 .footer{
-  background-color: #1c2b68;
   color: white;
   padding: 1%;
   text-align: center;
@@ -255,7 +305,7 @@ body{
 .reports{
   text-align: center;
   padding: 3% 5%;
-  background-color: #FFF;
+  background-color: #F8F0FB;
 }
 
 .report_headings{
@@ -272,11 +322,11 @@ body{
 /* about us page */
 .aboutus{
   padding: 3% 5%;
-  background-color: white;
   text-align: center;
 }
 
 .aboutus-heading{
+  color: white;
   position: relative;
   text-align: center;
   margin-top: 2%;
@@ -289,6 +339,7 @@ body{
 }
 
 .who-copy{
+  color: white;
   opacity: 0;
   animation-delay: 2s;
   position: relative;
@@ -305,8 +356,7 @@ body{
 }
 
 .aboutus-ext{
-  background-color: #1c2b68;
-  color: white;
+  background-color: #F8F0FB;
   }
 
 
@@ -322,7 +372,6 @@ body{
   #features_anchor{
     display: block;
     position: relative;
-    top: -200px;
     visibility: hidden;
   }
 
@@ -338,23 +387,19 @@ body{
   }
 
   .navbar-brand{
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .navbar-toggler{
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .title{
     padding: 5%;
   }
 
-  .body-text{
-    font-size: 2.5em;
-  }
-
   .big-heading{
-    font-size: 4em;
+    font-size: 2em;
   }
 
   .aboutus-heading{
@@ -370,8 +415,12 @@ body{
   }
 
   .h3-headings{
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin-bottom: 5%;
+  }
+
+  .h3-headings-roadmap{
+    font-size: 2rem;
   }
 
   .contact_headings{
@@ -381,6 +430,7 @@ body{
   .download-button{
     margin-bottom: 5%;
     font-size: 2.5rem;
+    color: #FFF;
   }
 
   .contact-button{
@@ -441,17 +491,13 @@ body{
     margin-right: inherit;
   }
 
-  .navbar-brand{
-    font-size: 2.5rem;
-  }
-
   .big-heading{
-    font-size: 2rem;
-    margin-top: 17.5%;
+    font-size: 2.5rem;
+    margin-top: 5%;
   }
 
   .title{
-    padding: 3% 15% 7%;
+    padding: 5% 15% 12%;
   }
 
   .about-us-bottom{
@@ -460,10 +506,6 @@ body{
 
   .aboutus-heading{
     font-size: 2em;
-  }
-
-  .body-text{
-    font-size: 1.25rem;
   }
 
   .feature_heading{
@@ -475,11 +517,6 @@ body{
   }
 
   .h1-headings{
-    font-size: 2rem;
-    margin-bottom: inherit;
-  }
-
-  .h3-headings{
     font-size: 2rem;
     margin-bottom: inherit;
   }
@@ -503,7 +540,7 @@ body{
   }
 
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .aboutus-ext{

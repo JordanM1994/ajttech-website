@@ -6,7 +6,6 @@ if ($( ".features" ).length) {
   screenWidth = $( ".report_headings" ).width();
 }
 
-console.log(screenWidth);
 if (screenWidth < 900) {
   $(".row").removeClass("service-row");
   $('.svc-text').each(function () {
@@ -79,4 +78,5 @@ if($(window).width() <= 1024) {
 setTimeout( function() {
   $(".who-copy").addClass("show")
   $(".who-img").addClass("show")
-},500)
+},500);
+
