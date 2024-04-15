@@ -141,7 +141,6 @@ body{
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-align: center;
 
   border: 1px;
@@ -322,7 +321,6 @@ body{
 /* about us page */
 .aboutus{
   padding: 3% 5%;
-  text-align: center;
 }
 
 .aboutus-heading{
@@ -346,10 +344,10 @@ body{
   top: 50%;
 }
 
-.who-img{
-  opacity: 0;
-  position: relative;
+.who-image{
+  text-align: center;
 }
+
 
 .about-us-bottom{
   padding: 3% 5% 0;
@@ -415,7 +413,6 @@ body{
   }
 
   .h3-headings{
-    font-size: 2rem;
     margin-bottom: 5%;
   }
 
@@ -480,7 +477,7 @@ body{
   }
 
   #features_anchor{
-    top: -25px;
+    top: -75px;
   }
 
   #contact_us_anchor{
@@ -566,10 +563,6 @@ body{
       padding: 0 7% 0;
   }
 
-  .who-copy{
-    transform: translateY(25%);
-  }
-
   .big-heading{
     font-size: 3rem;
   }
@@ -604,6 +597,12 @@ body{
   -moz-animation: fadeIn 1s;
   -o-animation: fadeIn 1s;
   -ms-animation: fadeIn 1s;
+}
+
+.about-us-cards{
+  padding: 3% 5% 3%;
+  text-align: center;
+  background-color: #F8F0FB;
 }
 
 /* * {
