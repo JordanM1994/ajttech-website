@@ -63,11 +63,6 @@ body{
   position: relative;
   width: 100%;
   overflow: hidden;
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
 }
 
 /*Navigation Bar*/
@@ -92,6 +87,12 @@ body{
 
 .header-container{
   color: white;
+  z-index: 1;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 .big-heading{
@@ -104,6 +105,14 @@ body{
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
+}
+
+.landing_image{
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* What we do  */
